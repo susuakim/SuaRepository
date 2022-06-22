@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 이미지를 불러오기 위해서는 <img> -->
+    <!-- 1. 현재 기준으로 파일을 불러드릴때 -->
+    <img src="image4.jfif">
+
+    <!-- 2. 현재 기준으로 폴더를 들어간 후, 파일을 불러드릴때 -->
+    <img src="img/image4.jfif", alt="뭐가 출력될까">
+
+    <!-- 3. 현재 기준으로 작성중인 html 파일이 폴더를 나가야하는 경우,
+    ../ = 폴더를 한번 나가겠다-->
+    <img src="../img/image4.jfif">     
+
+    <!-- 4. 현재 기준으로 작성중인 html 파일이 루트폴더로 나가야하는 경우 -->
+    <img src="/img/image4.jfif">
+
+    <!-- 5. CDN : 네트워크를 통해서 경로를 받아올 떄-->
+    <img src="https://search.pstatic.net/sunny/?src=https%3A%2F%2Fimg.theqoo.net%2Fimg%2FozOAd.jpg&type=sc960_832">
+
+</body>
+</html>

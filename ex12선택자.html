@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 전체 선택자(*): 모든 태그들에게 적용할 때 사용 (우선순위 1점)*/
+        *{
+            color: blue;
+        }
+
+        /* 태그 선택자(태그이름): 특정 태그이름에게 적용할 때 사용 (우선순위 5점) */
+        p{
+            color: red;
+        }
+
+        /* 클래스 선택자(.클래스명): 특정 클래스들에게 적용할 때 사용  */
+        /* 중복 가능 == 묶어서 동일하게 색을 변화시킬 수 있음*/
+        .txt{
+            color: yellow;
+        }
+
+        /* 아이디 선택자(#아이디명): 특정 아이디에게 적용할 때 사용 (우선순위 100점) */
+        /* 중복 불가능 */
+        #sp{
+            color: green;
+        }
+  
+    </style>
+</head>
+<body>
+    <p>빅데이터</p>
+    <p class="txt">인공지능</p>
+    <span class="txt" id="sp">IoT</span>
+    <span>Web</span>
+
+</body>
+</html>

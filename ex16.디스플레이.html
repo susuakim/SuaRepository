@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span{
+            display: block; 
+        }
+
+        span{
+            display: none;
+
+        }
+
+        p:hover ~ span{
+            display: inline;
+        }
+        
+    </style>
+</head>
+<body>
+    <!-- display 속성
+    1. block: 한줄 전체의 공간을 차지 (p, h1)
+    2. inline: 컨텐츠의 크기만큼만 공간을 차지 (span, a)
+    3. none: 화면에 보여주지 않겠다-->
+
+    <p>p태그영역</p> <!--한줄전체를 차지-->
+    <p>p태그영역</p>
+
+    <span>span태그영역</span> <!--해당글자만 차지해서 그래서 엔터처리 안되어있음-->
+    <span>span태그영역</span>
+
+</body>
+</html>

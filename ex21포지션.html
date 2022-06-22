@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+        }
+
+        #div1{
+            background-color: red;
+        }
+
+        #div2{
+            /* 포지션 relative: 생성된 첫위치를 기준으로 값을 이동 */
+            background-color: yellow;
+            position: relative;
+        }
+
+        #div3{
+            /* 포지션 absolute: 부모요소의 영향을 받지 않는 경우에는
+            <body>를 기준으로 화면을 이동
+            그러나!! 부모요소가 relative로 작성이 되어있다면
+            부모요소의 시작점을 기준점으로 이동한다. */
+            background-color: green;
+            position: absolute;
+            top: 100px;
+        }
+
+        #div4{
+            width: 400px;
+            height: 400px;
+            background-color: blue;
+            position: relative;
+        }
+
+        #div5{
+            /* 포지션 fixed: 화면에 원하는 위치에 고정 시킬때 사용 */
+            background-color: purple;
+            position: fixed;
+            right: 0px;
+            bottom: 0px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="div1"></div>
+    <div id="div2"></div>
+    <div id="div4">
+        <div id="div3"></div>
+    </div>
+
+    <br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br>
+
+    <div id="div5"></div>
+</body>
+</html>

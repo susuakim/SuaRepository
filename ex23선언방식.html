@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--
+        <link>태그를 통해서 css파일을 불러드리는 방식
+        1. href ="css파일 경로"
+        2. css파일내에 디자인코드(css)를 작성할때는 <style>필요가 없다.
+        3. 재사용성이 매우 뛰어나고, 코드가 한줄만 존재, 보안뛰어나다.
+    -->
+    <link href="style.css" rel="stylesheet">
+    <!--
+        내부방식
+        html코드 상에서 style를 정의하고 거기에 스타일을 명시하는 방법
+    -->
+    <!-- <style>
+        p{
+            color: red !important;
+        }
+        #txt{
+            color: yellow;
+        }
+    </style> -->
+</head>
+<body>
+    <!--
+        인라인방식 태그 안에 직접 스타일을 명시할때 사용
+        * < 태그 < 클래스(.) < id(#) < 인라인방식 < !important
+    -->
+    <p style="color: blue;" id="txt">글자</p>
+    <p>123</p>
+</body>
+</html>
