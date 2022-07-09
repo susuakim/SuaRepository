@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        //Java와 다른 점 두가지
+
+        // 1. / (나머지 연산자) => 실제 나누기 연산 결과
+        // % : 나머지 연산자 
+        console.log('100/3>> ', 100/3)
+        console.log('100%3>> ', 100%3)
+
+        // ============= 실습1. =============
+        let num = 312
+        console.log('백의 자리 이하 버린결과1>> ', num - (num%100))
+
+        // ============= 실습2. =============
+        // 형변환 연산자로
+        let num2 = 3.12
+        console.log('백의 자리 이하 버린결과2>> ', (parseInt(num2))*100)
+
+        // 2. == (동등연산자) VS === (일치연산자)
+
+        // == 값만 비교
+         console.log('10 == "10">> ', 10 == '10') //true
+
+        // === 값, 자료형 비교
+         console.log('10 === "10">> ', 10 === '10') //false
+
+        // 3. 삼항연산자
+        // 조건문 ? 선택문1(True) : 선택문2(False)
+        let a = 10, b = 20
+        let res2 = a > b ? 'a가 더 크다' : 'b가 더 크다'
+        console.log('a와 b 중 누가 더 큰가요?>> ', res2)
+
+    </script>
+
+
+</body>
+</html>

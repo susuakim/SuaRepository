@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        // 형변환
+        // 현재 num은 String
+        let num = '3.14'
+
+        // 1. 문자 -> 실수 : parseFloat
+        let num2 = parseFloat(num)
+        console.log('실수로 형변환>> ', num2)
+
+        // 2. 문자 -> 정수 : pareInt
+        let num3 = parseInt(num)
+        console.log('정수로 형변환>> ', num3)
+
+        // 3. 문자 ->> 숫자 : Number
+        // '3.14' -> 3.14
+        // 실수를 넣으면 실수로
+        console.log('숫자로 형변환(실수)>> ', Number(num))
+
+        // '3' -> 3
+        // 정수를 넣으면 정수로
+        let num4 = '3'
+        console.log('숫자로 형변환(정수)>> ', Number(num4))
+
+        // 4. 숫자 -> 문자 : String
+        // 첫번째 방법
+        console.log('문자로 형변환>> ', String(num3))
+        
+        // 두번째 방법
+        console.log('문자로 형변환>> ', num3.toString())
+
+
+    </script>
+
+
+</body>
+</html>
