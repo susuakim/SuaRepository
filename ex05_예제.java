@@ -1,15 +1,24 @@
-package 반복문while;
+package for문;
 
-import java.util.Random;
+import java.util.Scanner;
 
 public class ex05_예제 {
 
 	public static void main(String[] args) {
-		Random r = new Random();
 		
-		int num = r.nextInt(20)+1;// 0~19까지의 랜덤수를 뽑아낸다,,
-//		r.nextInt(20)+1;//0~20까지의 랜덤수를 뽑아낸다,,
-		System.out.println(num);
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.print("단 입력 >> ");
+		int num1 = sc.nextInt();
+		
+		System.out.print("범위 입력 >> ");
+		int num2 = sc.nextInt();
+		
+		
+		for(int i=1; i<=num2; i++) {
+			System.out.println(num1 + " * " + i + " = " + i*num1);
+		}
+
 		
 	}
 
