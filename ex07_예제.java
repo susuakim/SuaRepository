@@ -1,30 +1,15 @@
-package 반복문while;
-
-import java.util.Scanner;
+package for문;
 
 public class ex07_예제 {
 
 	public static void main(String[] args) {
 		
-		Scanner sc = new Scanner(System.in);
-		
-		System.out.print("입력>>");
-		int num1 = sc.nextInt();
-		
-		System.out.print("입력>>");
-		int num2 = sc.nextInt();
-		
-		int max = num1>num2? num1 : num2;
-		int min = num1<num2? num1 : num2;
-		
-		int sum = 0;
-		
-		for(int i=min; i<=max; i++) {
-			sum+=i;
-			System.out.print(i);
-				
-			}
-		System.out.println(sum);
+		for(int i=1; i<=9; i++) {
+			for(int j=2; j<=9; j++) {
+				System.out.print(j + "*" + i + "=" + i*j + " ");
+			}System.out.println("\t");
+		}
 
 	}
+
 }
