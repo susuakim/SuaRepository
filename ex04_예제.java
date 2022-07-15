@@ -1,18 +1,26 @@
-package for문;
+package 배열;
+
+import java.util.Random;
 
 public class ex04_예제 {
 
 	public static void main(String[] args) {
+		
+		Random r = new Random();
+		
+		int[] ran = new int[10];
+		
+		int sum = 0;
 
-		for(int i = 1; i <=50; i++) {
-			int num = i%10;
-			if(num==3 || num==6 || num==9) {
-				System.out.print("박수" + " ");
-		}else if(num==5) {
-			System.out.print("으악");
-		}else System.out.println(i);
-
+		for(int i=0; i<10; i++) {
+			ran[i]=r.nextInt(20)+1;
+			System.out.println(ran[i]);
+			sum += ran[i];
 		}
-
+		System.out.println("합: " + sum);
+		System.out.println("평균: " + (float)sum/ran.length);
+		
+		
 	}
+
 }
