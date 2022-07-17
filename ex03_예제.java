@@ -1,24 +1,34 @@
-package ÀÌÂ÷¿ø¹è¿­;
+package ¸Ş¼Òµå;
 
 public class ex03_¿¹Á¦ {
 
 	public static void main(String[] args) {
-		
-		int[][] arr = new int[5][5];
-		int cnt = 20;
-		for(int i = 0; i < arr.length; i++) {
-			for(int j = 0; j < arr[i].length; j++) {
-				arr[j][i] = ++cnt;
-			}
-		}
-		
-		
-		for(int i = 0; i < arr.length; i++) {
-			for(int j = 0; j < arr[i].length; j++) {
-				System.out.print(arr[j][i] + " ");
-			}System.out.println();
-		}
+		System.out.println("µ¡¼ÀÀº:  " + add(3,5));
+		System.out.println("»¬¼ÀÀº:  " + sub(3,5));
+		System.out.println("°ö¼ÀÀº:  " + mul(3,5));
+		System.out.println("³ª´°¼ÀÀº:  " + div(3,5));
 
 	}
+	
+	public static int add(int a, int b) {
+		int result = a + b;
+		return result;
+	}
+	
+	public static int sub(int a, int b) {
+		int result = a - b;
+		return result;
+	}
+	
+	public static int mul(int a, int b) {
+		int result = a * b;
+		return result;
+	}
+	
+	public static int div(int a, int b) {
+		int result = a / b;
+		return result;
+	}
+	
 
 }
