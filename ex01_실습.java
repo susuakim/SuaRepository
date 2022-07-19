@@ -1,40 +1,37 @@
-package ArrayList;
+package ¸Þ¼Òµå;
 
-import java.util.ArrayList;
-import java.util.Scanner;
-
-public class ex01_½Ç½À{
+public class ex01_½Ç½À {
 
 	public static void main(String[] args) {
+		add(3,5);
+		sub(3,5);
+		mul(3,5);
+		div(3,5);
 		
-		Scanner sc = new Scanner(System.in);
-		
-		ArrayList<String> arrlist = new  ArrayList<String>();
-		
-		
-		for(int i = 0; i < 5; i++) {
-			System.out.print("ÀÌ¸§À» ÀÔ·ÂÇÏ¼¼¿ä: ");
-			String name = sc.next();
-			arrlist.add(name);
-		}
-		
-		for(int i = 0; i<arrlist.size(); i++) {
-			System.out.print(arrlist.get(i) + " ");
-		}
-		
-		System.out.println();
-		
-		System.out.print("»èÁ¦ÇÒ ÀÌ¸§:  ");
-		String name_d = sc.next();
-		
-		arrlist.remove(name_d);
-		
-		System.out.print("»èÁ¦ ÈÄ ÀÌ¸§ Ãâ·Â: ");
-		
-		for(int i = 0; i<arrlist.size(); i++) {
-			System.out.print(arrlist.get(i) + " ");
-		}
-		
+		System.out.println("==============");
+		System.out.println("µ¡¼ÀÀº: " + add);
+		System.out.println("»¬¼ÀÀº: " + sub);
+		System.out.println("°ö¼ÀÀº: " + mul);
+		System.out.println("³ª´°¼ÀÀº: " + div);
 	}
 
+	
+	public static int add(int a, int b) {
+		return a + b;
+	}
+	
+	public static int sub(int a, int b) {
+		return a - b;
+	}
+	
+	public static int mul(int a, int b) {
+		return a * b;
+	}
+	
+	public static int div(int a, int b) {
+		return a / b;
+	}
+	
+	
+	
 }
