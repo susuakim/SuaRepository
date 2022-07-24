@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button class="btn">클릭</button>
+    <script>
+        //Callback 함수
+        // 어떤 이벤트가 발생했거나, 특정 시점에 도달했을 때
+        // "시스템"에서 호출해주는 함수
+        // == 함수 안에 파라미터로 들어가는 함수
+
+        // 1. 이벤트 핸들러 & 리스너
+        // 어떤 이벤트가 발생했을 때 
+        // : addEventListner(어떤 이벤트, 이벤트가 있을 때 실행하는 로직)
+
+        document.querySelector('.btn').addEventListener('click', function(){
+            console.log('click!')
+        })
+
+        // 2. 타임 핸들러
+        // 의도적으로 시간 지연을 사용하는 기능 
+        // : setTimeout(시간 지연 후 실행될 로직, 지연할 시간)
+
+        console.log('가')
+
+        setTimeout(function(){
+            console.log('나')
+        }, 2000) // 2000은 단위상 2초
+
+        console.log('다')
+
+    </script>
+</body>
+</html>
