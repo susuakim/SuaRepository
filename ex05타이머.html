@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- button#btn -->
+    <button id="btn">Click!😊</button>
+    <div id="timer"></div>
+
+    <script>
+        // 1. timer라는 공간 가져오기
+        let timer =document.getElementById('timer')
+
+        // 2. 1초부터 5초까지 계산해주는 타이머 만들기
+        //      => setTimeout
+        for(let i = 1; i<=5; i++){
+            setTimeout(function(){
+                timer.innerHTML += i + '초<br>'
+        }, i*1000)
+        }
+
+        // 3. 버튼을 클릭했을 때, Click! 이라고 나타내주기
+        //      => addEventListner
+        document.getElementById('btn').addEventListener('click', function(){
+            timer.innerHTML += 'Click✨'+'<br>'
+        })
+
+        // 단, jQuery 문법을 사용하지 않고, 순수 자바스크립트 문법만 사용
+    </script>
+</body>
+</html>
