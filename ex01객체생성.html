@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 객체(object) : 여러개의 데이터를 
+        // 속성 & 값으로 구분해서 저장
+        // key & value
+
+        // 객체 내에 접근해서 데이터를 가져올 때
+        // 사용하는 기호 => .(마침표)
+
+        // 1. 객체 저장
+        let person = {
+            name : '김수아',
+            subject : 'Java',
+            intro : function(){
+                alert('안녕하세요 김수아입니다.')
+            }
+        };
+
+        // 객체 안에 객체
+        let campus = {
+            lmh : {
+                name : '이명훈',
+                subject : '머신러닝',
+                intro : function(){
+                    console.log('이명훈입니다.')
+                }
+            },
+            psh : {
+                name : '박수현',
+                subject : 'Java',
+                intro : function(){
+                    console.log('박수현입니다.')
+                }
+            }
+        }
+
+
+        // 2. 객체 내 데이터 접근
+        console.log(person.name)
+        person.intro()
+
+        // 3. 객체 내 데이터 수정 & 추가
+        person.name = 'AI'
+        console.log('바뀐 과목: ' + person.subject)
+
+        person.lunch = '주먹밥'
+        console.log('추가한 점심 메뉴: ' + person.lunch)
+
+        console.log(campus.psh.subject)
+        
+
+
+
+
+    </script>
+</body>
+</html>
