@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="text">Hello, World!</p>
+    <button onclick="innerFunc()">Click!</button>
+
+    <script>
+        // DOM (Document Object Model)
+        // 문서(HTML)지만 Javascript를 이용할 수 있도록 객체화
+        // -> 모든 HTML 문서는 tree의 형태로 쪼개진다
+        // -> *** 가장 최상위의 객체는 document 객체다 ***
+
+        // == function innerFunc(){}
+        let innerFunc = () => {
+            //요소 = 태그 + 컨텐츠
+            //.document.getElementById
+            let str = document.getElementById('text')
+            console.log('요소:', str)
+
+            //요소 안에 내용만 접근 or 수정
+            //.innerText 
+            console.log('내용만: ' + str.innerText)
+
+            str.innerText = '<h1>bye bye~~</h1>'
+
+            // 태그까지 적용하고 싶을 때
+            // .innerHTML
+            str.innerHTML = '<h1>bye bye~~</h1>'
+        }
+
+    </script>
+</body>
+</html>
