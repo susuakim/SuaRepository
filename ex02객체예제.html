@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // 1. pokemon 이라는 객체 생성
+        // 2. pika, kkobook 객체 생성
+        //   -> 이름, 나이, 스킬
+        // pika : 피카츄, 2살, 백만볼트(팝업창)
+        // kkobook : 꼬북이, 1살, 물대포(팝업창)
+
+        // 결과물로
+        // 피카츄의 나이는 2살, 꼬북이 나이는 1살 => 문서에 뜸
+        // 콘솔창에는 '물대포'
+
+        let pokemon = {
+
+            pika : {
+                name : 'pika',
+                age : '2',
+                intro : function(){
+                alert('백반볼트~~~!!!!!!! 얏!!')
+            },
+
+            kkobook : {
+                name : 'kkobook',
+                age : '1',
+                intro : function(){
+                    console.log('물대포~~~!!!!!!! 얏!!')
+            }
+
+        }
+    }
+}
+
+        document.write('피카츄의 나이는>> ' + pokemon.pika.age)
+        pokemon.pika.intro()
+
+
+        document.write('꼬북이의 나이는>> ' + pokemon.kkobook.age)
+        pokemon.kkobook.intro()
+
+
+
+
+    </script>
+
+
+</body>
+</html>
