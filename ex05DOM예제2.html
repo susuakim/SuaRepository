@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>클릭 한번 해볼까요?</h1>
+    <button onclick="mkH1()">h1태그 생성</button>
+    <button onclick="mkA()">a태그 생성</button>
+    <button onclick="mkUl()">ul태그 생성</button>
+    <!-- div는 생성한 태그를 누적할 공간-->
+    <div id="div1"></div>
+
+    <script>
+        // 1. 글자를 누적해줄 공간인 div1 가져오기
+        let div = document.getElementById('div1')
+
+        // 2. 함수별로 가지고 온 div태그 안에 태그 생성하기
+        // 단 누적의 형태로 생성
+
+        // mkH1 함수 <h1>오점먹?</h1>
+        let mkH1 = () => {
+            div.innerHTML += '<h1>오점먹?</h1>'
+        }
+
+        // mkA 함수 <a href="#">구글로 이동</a>
+        let mkA = () => {
+            div.innerHTML += '<a href = "www.google.com">구글 페이지로 이동!</a>'
+        }
+
+        // mkUl 함수 <ul><li> 먹고싶은 메뉴 </li><ul>
+        let mkUl = () => {
+            div.innerHTML += '<ul><li> 라면 </li></ul>'
+        }
+    </script>
+    
+</body>
+</html>
