@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    ID : <input type="text" id="id"><br>
+    PW : <input type="password" id="pw"><br><br>
+    <button onclick="login()">클릭</button>
+
+    <script>
+        function login(){
+            // 1. 사용자가 id, pw 입력 후 버튼 클릭
+            let id = document.getElementById('id')
+            let pw = document.getElementById('pw')
+    
+            // 2. alert 창에 사용자에 대한 정보를 띄울것
+            // => id님 환영합니다 라고 띄워주기
+            alert(id.value + "님 환영합니다")
+        }
+    </script>
+    
+</body>
+</html>
