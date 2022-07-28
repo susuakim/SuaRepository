@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Case01) 파일 다운로드 받아서 사용하기 -->
+    <!-- <script src="./js/jquery-3.6.0.min.js"></script> -->
+
+    <!-- **추천** -->
+    <!-- Case02) CDN(content delivery network)을 이용해서 사용하기 -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</head>
+<body>
+    <p>제이쿼리가 적용되지 않았습니다.</p>
+
+    <script>
+        //제이쿼리가 적용되었을 때,
+        // 제이쿼리 기호 : "$"
+        $(document).ready(()=>{
+            $('p').text('jQuery 사용 가능!')
+        })
+    </script>
+</body>
+</html>
