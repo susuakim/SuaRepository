@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        img{
+            width: 300px;
+        }
+
+        .addC{
+            border: 5px solid lime;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <img src="./img/pic1.gif" id="img1">
+    </div>
+    <button id="btn1">div내부 앞에 추가</button>
+    <button id="btn2">div내부 뒤에 추가</button>
+    <button id="btn3">div외부 앞에 추가</button>
+    <button id="btn4">img 1개 삭제</button>
+    <button id="btn5">div 안 비우기</button>
+    <button id="btn6">class 추가</button>
+    <button id="btn7">class 삭제</button>
+    <button id="btn8">부모요소 접근</button>
+
+    <script>
+        // 1. 해당 요소 내부 앞쪽에 데이터 추가 : prepend()
+        $('#btn1').click(()=>{
+            $('div').prepend('<img src="./img/pic2.gif">')
+        })
+
+        // 2. 해당 요소 내부 뒷쪽에 데이터 추가 : append()
+        $('#btn2').click(()=>{
+            $('div').append('<img src="./img/pic3.jpg">')
+        })
+
+        // 3. 해당 요소 앞쪽에 데이터 추가 : before()
+        $('#btn3').click(()=>{
+            $('div').before('<button id="newBtn">새로 생긴 버튼 </button>')
+        })
+
+        // 동적 이벤트 바인딩
+        // on('click')
+
+        // .click : 최초에 페이지를 로딩할때 선언되어 있던 요소에 클릭이벤트
+        // on('click') : 동적으로 추가된 요소에 클릭이벤트
+        $(document).on('click', '#newBtn', ()=>{
+            // 4. 해당 요소 외부 뒤쪽에 데이터 추가 : after()
+            $('div').after('<p>div 외부 뒤에 추가!</p>')
+        })
+
+        // 4. 이미지 삭제하기
+        $('#btn4').click(()=>{
+            $('#img1').remove()
+        })
+
+        // 5. 이미지 전부 삭제하기
+        $('#btn5').click(()=>{
+            $('div').empty()
+        })
+
+        // 6. 클래스를 추가하기 : addClass()
+        $('#btn').click(()=>{
+            $('img').addClass('addC')
+        })
+
+        // 7. 이미지 지우기
+        $('#btn7').click(()=>{
+            $('#img').removeClass()
+        })
+
+        // 8. 
+        $('#btn').click(()=>{
+            $('#img1').parent().css('background-color', 'pink')
+        })
+
+    </script>
+    
+</body>
+</html>
