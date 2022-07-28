@@ -1,0 +1,37 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+  <servlet>
+  	<servlet-name>JoinProgram</servlet-name>
+  	<display-name>JoinProgram</display-name>
+  	<description></description>
+  	<servlet-class>com.smhrd.controller.JoinProgram</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>LoginProgram</servlet-name>
+  	<display-name>LoginProgram</display-name>
+  	<description></description>
+  	<servlet-class>com.smhrd.controller.LoginProgram</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>UpdateProgram</servlet-name>
+  	<display-name>UpdateProgram</display-name>
+  	<description></description>
+  	<servlet-class>com.smhrd.controller.UpdateProgram</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>JoinProgram</servlet-name>
+  	<url-pattern>/JoinProgram</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>LoginProgram</servlet-name>
+  	<url-pattern>/LoginProgram</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>UpdateProgram</servlet-name>
+  	<url-pattern>/UpdateProgram</url-pattern>
+  </servlet-mapping>
+</web-app>
