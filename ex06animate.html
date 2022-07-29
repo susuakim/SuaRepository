@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <style>
+        #ani_div{
+            background-color: salmon;
+        }
+    </style>
+</head>
+<body>
+    <button id="button1">버튼클릭</button>
+    <div id="ani_div"></div>
+
+    <script>
+        // animate(css 속성을 가진 객체, 속도) 함수
+        // css 속성을 이용해서 애니메이션 수행
+        // 단, 비수치형 속성으로는 효과를 줄 수 없다
+        // => '빨간색에서 파란색으로 변경해줘' 불가능
+        // => width, hetgth 등 변경 가능
+
+        $('#button1').click(()=>{
+            let div = $('#ani_div')
+
+            div.animate({height:'300px', opacity:'0.4'}, 'slow')
+            div.animate({width:'300px', opacity:'0.8'}, 'slow')
+            div.animate({height:'100px'}, 'slow')
+            div.animate({width:'100px'}, 'slow')
+        })
+
+    </script>
+    
+</body>
+</html>
