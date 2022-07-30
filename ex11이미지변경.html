@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src ="https://cdna.artstation.com/p/assets/images/images/043/002/912/large/rinkim-.jpg?1636025603" width="300px">
+    <br>
+    <button onclick="ch()">이미지 변경</button>
+
+    <script>
+        //https://cdna.artstation.com/p/assets/images/images/043/002/912/large/rinkim-.jpg?1636025603
+
+        function ch(){
+            let img = document.querySelectorAll('img')[0]
+            // 객체의 속성을 변경하고 싶을 때
+            // .속성이름 = "속성값"
+            if(img.src == "https://cdna.artstation.com/p/assets/images/images/043/002/912/large/rinkim-.jpg?1636025603"){
+                img.src = 'https://blog.kakaocdn.net/dn/YIPSA/btrEtH3c7NO/6eya8X9O9yMCqLW8lXMyO1/img.gif'
+            }else{
+                img.src = "https://cdna.artstation.com/p/assets/images/images/043/002/912/large/rinkim-.jpg?1636025603"
+            }
+
+        }
+    </script>
+</body>
+</html>
