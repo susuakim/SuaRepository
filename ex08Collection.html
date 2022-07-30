@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JS</li>
+    </ul>
+
+    <script>
+        // Tag Name, Class Name, Name 복수개
+        // => 유사 배열 HTML Collection에 관리
+        let li = document.getElementsByTagName('li')
+        console.log('li[0]: ' + li[0].innerText)
+
+        console.log('li 전체: ')
+        for(let i = 0; i < li.length; i++){
+            console.log(li[i].innerText)
+        }
+    </script>
+    
+</body>
+</html>
