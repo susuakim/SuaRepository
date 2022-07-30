@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+        }
+        #redBox{
+            background-color: red;
+        }
+        #blueBox{
+            background-color: blue;
+        }
+        #greenBox{
+            background-color: green;
+        }
+        #grayBox{
+            background-color: gray;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div id="redBox"></div>
+    <div id="blueBox"></div>
+    <div id="greenBox"></div>
+    <div id="grayBox"></div>
+    <button onclick="margin()">이동하기!</button>
+    <button onclick="radius()">둥글게!</button>
+
+    <script>
+        // Case01) id 이용하기
+        let redBox = document.getElementById('redBox')
+        let blueBox = document.getElementById('blueBox')
+        let greenBox = document.getElementById('greenBox')
+        let grayBox = document.getElementById('grayBox')
+
+        // Case02) 유사 배열 이용하기
+        let div = document.getElementsByTagName('div')
+
+        // margin 함수
+        // => 각각 왼쪽 마진을 100, 200, 300씩 주기
+        let margin=()=>{
+            blueBox.style.marginLeft = '100px'
+            greenBox.style.marginLeft = '200px'
+            grayBox.style.marginLeft = '300px'
+
+        }
+
+        // radius 함수
+        // => 모든 요소들에게 50% 오른쪽 위, 왼쪽 아래
+        let radius=()=>{
+            // Case01) id 이용하기
+            // redBox.style.borderTopRightRadius = "50%"
+            // blueBox.style.borderTopRightRadius = "50%"
+            // greenBox.style.borderTopRightRadius = "50%"
+            // grayBox.style.borderTopRightRadius = "50%"
+
+            // Case02) 유사 배열 이용하기
+            // div[0].style.borderTopRightRadius = "50%"
+            for(let i = 0; i<div.length; i++){
+                div[i].style.borderTopRightRadius = "50%"
+                div[i].style.borderBottomLeftRadius = "50%"
+            }
+
+        }
+
+    </script>
+    
+</body>
+</html>
