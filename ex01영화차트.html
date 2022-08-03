@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <!-- 1. 영화 차트를 띄어줄 공간 -->
+    <div id="movie"></div>
+    <!-- 2. 데이터를 요청해줄 버튼 -->
+    <button onclick="data()">요청</button>
+    <script>
+        function data(){
+            // $ - jQuery를 통해
+            // ajax - ajax를 요청
+            // {} - 그 안 데이터 -> 객체
+            $.ajax({
+                url : 'http://kobis.or.kr/kobisopenapi/webservice/rest/boxoffice/searchWeeklyBoxOfficeList.json?key=f091d42eff1fec31f0232f33a21edf7a&targetDt=20220701',
+                type : 'get',
+                // data : ,
+                success : (res)=>{
+                    let list = '<table>'
+                        // 첫번째 tr
+                        list += '<tr>'
+                            // 세가지 th
+                            list += '<th>순위</th>'
+                            list += '<th>영화제목</th>'
+                            list += '<th>개봉일자</th>'
+                        list += '</tr>'
+                        // 나머지 tr
+                        // Case 1. for문
+                    // for(let i = 0; i < res.boxOfficeResult.weeklyBoxOfficeList.length; i++){
+                    //     let data = res.boxOfficeResult.weeklyBoxOfficeList[i]
+                    //     list+='<tr>'
+                    //         // 표현식! 숫자 1 옆에있는 `
+                    //         list += `<td>${data.rank}</td>`
+                    //         list += `<td>${data.movieNm}</td>`
+                    //         list += `<td>${data.openDt}</td>`
+                    //     list+='</tr>'
+                    // }
+
+                    // Case 2. forEach문
+                    // 배열이름.forEach((매개변수)=>{매개변수})
+                    res.boxOfficeResult.weeklyBoxOfficeList.forEach((data)=>{
+                        list+='<tr>'
+                            // 표현식! 숫자 1 옆에있는 `
+                            list += `<td>${data.rank}</td>`
+                            list += `<td>${data.movieNm}</td>`
+                            list += `<td>${data.openDt}</td>`
+                        list+='</tr>'
+                        
+                    })
+                    list += '</table>'
+                    $('#movie').prepend(list)
+                    // 영화 순위표 1~10위까지
+                    // 영화 순위, 영화 제목 -> console
+                },
+                error : ()=>{
+                    alert('error!')
+                }
+            })
+        }
+    </script>
+    
+</body>
+</html>
