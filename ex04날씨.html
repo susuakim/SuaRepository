@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <h1> 현재 날씨는? </h1>
+    <div id="weather"></div>
+    <button onclick="data()">데이터 가져오기</button>
+
+    <script>
+        function data(){
+            $.ajax({
+                url : 'http://api.openweathermap.org/data/2.5/weather?q=seoul&appid=1eb1d18602c0e2dde562cdc2005a4495&units=metric',
+                type : 'get',
+                // 버튼을 클릭했을때 console창에 
+                // 현재기온(temp): 00, 최고기온(temp_max): 00, 최저기온(temp_min): 00
+                success : (res)=>{
+                    console.log('현재 기온: ' + res.main.temp)
+                    console.log('최고 기온: ' + res.main.temp_max)
+                    console.log('최저 기온: ' + res.main.temp_min)
+                },
+                error:function(){
+                    console.log('error')
+                }
+            })
+        }
+    </script>
+    
+</body>
+</html>
