@@ -1,8 +1,8 @@
-package ¹è¿­;
+package Â¹Ã¨Â¿Â­;
 
 import java.util.Random;
 
-public class ex04_¿¹Á¦ {
+public class ex04_Â¿Â¹ÃÂ¦ {
 
 	public static void main(String[] args) {
 		
@@ -17,8 +17,8 @@ public class ex04_¿¹Á¦ {
 			System.out.println(ran[i]);
 			sum += ran[i];
 		}
-		System.out.println("ÇÕ: " + sum);
-		System.out.println("Æò±Õ: " + (float)sum/ran.length);
+		System.out.println("Ã‡Ã•: " + sum);
+		System.out.println("Ã†Ã²Â±Ã•: " + (float)sum/ran.length);
 		
 		
 	}
