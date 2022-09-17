@@ -1,27 +1,27 @@
-package ½Ç½À;
+package ì‹¤ìŠµ;
 
 import java.io.*;
 import java.util.Scanner;
 
-public class ex08_¿¹Á¦ {
+public class ex08_ì˜ˆì œ {
 	public static void main(String args[]) {
         
         Scanner sc = new Scanner(System.in);
         
-        System.out.print("¼ıÀÚ ÀÔ·Â: ");
+        System.out.print("ìˆ«ì ì…ë ¥: ");
         int num = sc.nextInt();
         
         int num_c;
         
         if(num>=100){
             num_c = num - (num/10)*10;
-            System.out.println("¹İ¿Ã¸²¼ıÀÚ??" + num_c);
+            System.out.println("ë°˜ì˜¬ë¦¼ìˆ«ì??" + num_c);
             if(num_c>5){
-                num = num + (10-num_c); System.out.print("¼ö: " + num);
+                num = num + (10-num_c); System.out.print("ìˆ˜: " + num);
             }else num -= num_c;
             
-            System.out.print("¹İ¿Ã¸² ¼ö: " + num);
-        }else System.out.println("100ÀÌ»óÀÇ ÀÚ¸®¸¦ ÀÔ·ÂÇØÁÖ¼¼¿ä.");
+            System.out.print("ë°˜ì˜¬ë¦¼ ìˆ˜: " + num);
+        }else System.out.println("100ì´ìƒì˜ ìë¦¬ë¥¼ ì…ë ¥í•´ì£¼ì„¸ìš”.");
         
         
         
