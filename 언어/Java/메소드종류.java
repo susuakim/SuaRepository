@@ -1,6 +1,6 @@
-package ¸Þ¼Òµå;
+package ë©”ì†Œë“œ;
 
-public class ex02_¸Þ¼ÒµåÁ¾·ù {
+public class ex02_ë©”ì†Œë“œì¢…ë¥˜ {
 
 	public static void main(String[] args) {
 		cc(22,3);
@@ -8,7 +8,7 @@ public class ex02_¸Þ¼ÒµåÁ¾·ù {
 		mulNumber(2,3);
 	}
 	
-	//¸Å°³º¯¼ö o, ¹ÝÈ¯°ª o
+	//ë§¤ê°œë³€ìˆ˜ o, ë°˜í™˜ê°’ o
 	public static void cc(int a, int b){
 		int c = a+b;
 		System.out.println(c);
