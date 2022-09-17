@@ -1,6 +1,6 @@
-package �޼ҵ�;
+package ¸Þ¼Òµå;
 
-public class ex02_���� {
+public class ex02_¿¹Á¦ {
 
 	public static void main(String[] args) {
 		
