@@ -1,23 +1,23 @@
-package if¹®;
+package ifë¬¸;
 
 import java.util.Scanner;
 
-public class ex06_¿¹Á¦ {
+public class ex06_ì˜ˆì œ {
 
 	public static void main(String[] args) {
-		System.out.print("Á¡¼ö ÀÔ·Â:  ");
+		System.out.print("ì ìˆ˜ ìž…ë ¥:  ");
 		
 		Scanner sc = new Scanner(System.in);
 		int totalScore = sc.nextInt();
 		
 		
 		if(totalScore >= 90) {
-			System.out.println("AÇÐÁ¡ÀÔ´Ï´Ù.");
+			System.out.println("Aí•™ì ìž…ë‹ˆë‹¤.");
 		}else if(totalScore >= 80 && totalScore <= 89) {
-			System.out.println("BÇÐÁ¡ÀÔ´Ï´Ù.");
+			System.out.println("Bí•™ì ìž…ë‹ˆë‹¤.");
 		}else if(totalScore >= 70 && totalScore <= 79) {
-			System.out.println("CÇÐÁ¡ÀÔ´Ï´Ù.");
-		}else System.out.println("DÇÐÁ¡ÀÔ´Ï´Ù.");
+			System.out.println("Cí•™ì ìž…ë‹ˆë‹¤.");
+		}else System.out.println("Dí•™ì ìž…ë‹ˆë‹¤.");
 
 	}
 }
