@@ -2,12 +2,12 @@ package sort;
 
 import java.util.Arrays;
 
-public class ex02_¹öºíÁ¤·Ä {
+public class ex02_ë²„ë¸”ì •ë ¬ {
 
 	public static void main(String[] args) {
-		// array[0]°ú array[1]À» ºñ±³ÇÑ ÈÄ,
-		//array[0]ÀÇ °ªÀÌ ´õ Å©¸é
-		//µÎ °ªÀ» Ä¡È¯ÇÑ´Ù.
+		// array[0]ê³¼ array[1]ì„ ë¹„êµí•œ í›„,
+		//array[0]ì˜ ê°’ì´ ë” í¬ë©´
+		//ë‘ ê°’ì„ ì¹˜í™˜í•œë‹¤.
 		
 		int[] arr = {45, 7, 12, 82, 25};
 		int temp;
