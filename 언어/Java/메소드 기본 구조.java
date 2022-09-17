@@ -1,8 +1,8 @@
-package ¸Ş¼Òµå;
+package ë©”ì†Œë“œ;
 
-public class ex01_¸Ş¼Òµå±âº»±¸Á¶ {
+public class ex01_ë©”ì†Œë“œê¸°ë³¸êµ¬ì¡° {
 
-		//main¸Ş¼Òµå: ÄÚµå¸¦ ½ÇÇà½ÃÄÑÁÖ´Â ¸Ş¼Òµå
+		//mainë©”ì†Œë“œ: ì½”ë“œë¥¼ ì‹¤í–‰ì‹œì¼œì£¼ëŠ” ë©”ì†Œë“œ
 	public static void main(String[] args) {
 		
 		int result = addNumber(1,2);
@@ -12,7 +12,7 @@ public class ex01_¸Ş¼Òµå±âº»±¸Á¶ {
 	}
 
 	
-	//¸Ş¼Òµå¸¦ »ı¼ºÇÒ ¶§ »ı¼ºÀ§Ä¡°¡ main ¸Ş¼Òµå¿Í °°Àº Å¬·¡½º¿¡ ÀÖ´Ù¸é static Å°¿öµå¸¦ ºÙ¿©ÁÖ¾î¾ßÇÑ´Ù.
+	//ë©”ì†Œë“œë¥¼ ìƒì„±í•  ë•Œ ìƒì„±ìœ„ì¹˜ê°€ main ë©”ì†Œë“œì™€ ê°™ì€ í´ë˜ìŠ¤ì— ìˆë‹¤ë©´ static í‚¤ì›Œë“œë¥¼ ë¶™ì—¬ì£¼ì–´ì•¼í•œë‹¤.
 	public static int addNumber(int num1, int num2) {
 		int result = num1+num2;
 		return result;
