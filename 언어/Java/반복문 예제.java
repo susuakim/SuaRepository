@@ -1,6 +1,6 @@
-package for¹®;
+package forÂ¹Â®;
 
-public class ex07_¿¹Á¦ {
+public class ex07_Â¿Â¹ÃÂ¦ {
 
 	public static void main(String[] args) {
 		
