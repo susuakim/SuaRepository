@@ -1,26 +1,26 @@
-package ¹è¿­;
+package ë°°ì—´;
 
-public class ex01_¿¹Á¦ {
+public class ex01_ì˜ˆì œ {
 
 	public static void main(String[] args) {
 		
 		int[] ar = {1,2,9,4,5,10,7,8,3,6,20,0};
 		
-		//±âÁØ°ªÀ» ¼³Á¤
-		int max = ar[0];// ¹è¿­¾È¿¡ ÀÖ´Â ±âÁØ°ªÀ¸·Î ¼³Á¤ÇØ¾ßÇÑ´Ù.
+		//ê¸°ì¤€ê°’ì„ ì„¤ì •
+		int max = ar[0];// ë°°ì—´ì•ˆì— ìˆëŠ” ê¸°ì¤€ê°’ìœ¼ë¡œ ì„¤ì •í•´ì•¼í•œë‹¤.
 		int min = ar[0];
 		
 		for(int i=0; i<ar.length; i++) {
 			if(max<ar[i]) {
 				max=ar[i];
 			}
-		}System.out.println("Å«°ª: " + max);
+		}System.out.println("í°ê°’: " + max);
 		
 		for(int j=0; j<ar.length; j++) {
 			if(min>ar[j]) {
 				min=ar[j];
 			}
-		}System.out.println("ÀÛÀº°ª: " + min);
+		}System.out.println("ì‘ì€ê°’: " + min);
 		
 		
 		for(int k = 0; k<ar.length; k++) {
