@@ -1,13 +1,13 @@
-package �޼ҵ�;
+package ¸Þ¼Òµå;
 
-public class ex02_�ǽ�2 {
+public class ex02_½Ç½À2 {
 
 	public static void main(String[] args) {
 		
 		int num1 = 2;
 		int num2 = 2;
 		int result = largerNumbers(num1, num2);
-		System.out.print("ū��Ȯ��:  " + result);
+		System.out.print("Å«¼öÈ®ÀÎ:  " + result);
 	
 	}
 	
