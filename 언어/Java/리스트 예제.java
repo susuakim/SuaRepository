@@ -1,6 +1,6 @@
-package ¹è¿­;
+package Â¹Ã¨Â¿Â­;
 
-public class ex05_¿¹Á¦ {
+public class ex05_Â¿Â¹ÃÂ¦ {
 
 	public static void main(String[] args) {
 
@@ -9,10 +9,10 @@ public class ex05_¿¹Á¦ {
 		
 		for(int i=0; i<7; i++) {
 			if(num[i]%2==1) {
-				System.out.println("È¦¼ö´Â " + num[i]);
+				System.out.println("ÃˆÂ¦Â¼Ã¶Â´Ã‚ " + num[i]);
 				cnt++;
 			}
-		}System.out.println("ÃÑ "+cnt);
+		}System.out.println("ÃƒÃ‘ "+cnt);
 
 	}
 
