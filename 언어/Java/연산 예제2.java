@@ -1,12 +1,12 @@
-package ¸Ş¼Òµå;
+package ë©”ì†Œë“œ;
 
-public class ex03_¿¹Á¦ {
+public class ex03_ì˜ˆì œ {
 
 	public static void main(String[] args) {
-		System.out.println("µ¡¼ÀÀº:  " + add(3,5));
-		System.out.println("»¬¼ÀÀº:  " + sub(3,5));
-		System.out.println("°ö¼ÀÀº:  " + mul(3,5));
-		System.out.println("³ª´°¼ÀÀº:  " + div(3,5));
+		System.out.println("ë§ì…ˆì€:  " + add(3,5));
+		System.out.println("ëº„ì…ˆì€:  " + sub(3,5));
+		System.out.println("ê³±ì…ˆì€:  " + mul(3,5));
+		System.out.println("ë‚˜ëˆ—ì…ˆì€:  " + div(3,5));
 
 	}
 	
