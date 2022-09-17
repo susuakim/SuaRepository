@@ -7,9 +7,9 @@ public class ex01_arraylist {
 	public static void main(String[] args) {
 		
 		int[] arr = new int[5];
-		//Arraylist´Â import ÇØ¾ßÇÔ
-		//ArrayList<µ¥ÀÌÅÍÅ¸ÀÔ> º¯¼ö¸í = new ArrayList
-		//µ¥ÀÌÅÍÅ¸ÀÔÀº °´Ã¼Å¸ÀÔÀ¸·Î Á¸ÀçÇØ¾ßÇÔ, intÇüÀÇ °´Ã¼Å¸ÀÔÀº Integer
+		//ArraylistëŠ” import í•´ì•¼í•¨
+		//ArrayList<ë°ì´í„°íƒ€ì…> ë³€ìˆ˜ëª… = new ArrayList
+		//ë°ì´í„°íƒ€ì…ì€ ê°ì²´íƒ€ì…ìœ¼ë¡œ ì¡´ì¬í•´ì•¼í•¨, intí˜•ì˜ ê°ì²´íƒ€ì…ì€ Integer
 		ArrayList<Integer> arrlist = new ArrayList<Integer>();
 		
 		System.out.println(arr.length);
