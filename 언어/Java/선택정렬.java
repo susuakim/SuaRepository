@@ -1,8 +1,8 @@
-package а╓╥д;
+package ц│б╓б╥ц└;
 
 import java.util.Arrays;
 
-public class ╪╠еца╓╥д {
+public class б╪б╠ц┘ц┐ц│б╓б╥ц└ {
 
 	public static void main(String[] args) {
 
