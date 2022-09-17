@@ -1,4 +1,4 @@
-package Á¤·Ä;
+package ì •ë ¬;
 
 public class Binery {
 
@@ -23,14 +23,14 @@ public class Binery {
 			}
 			
 			if(lowIndex >= highIndex) {
-				midIndex = -1; //¿À·ù°¡ ³ª¸é -1ÀÌ ¸®ÅÏµÇµµ·Ï(°³¹ßÀÚÀÇ ±ÔÄ¢)
+				midIndex = -1; //ì˜¤ë¥˜ê°€ ë‚˜ë©´ -1ì´ ë¦¬í„´ë˜ë„ë¡(ê°œë°œìì˜ ê·œì¹™)
 				break;
 			}
 			
 			midIndex = (highIndex + lowIndex) / 2;
 		}
 		
-		System.out.println("³»°¡ Ã£´Â °ªÀº Index: " + midIndex + "¿¡ ÀÖ´Ù.");
+		System.out.println("ë‚´ê°€ ì°¾ëŠ” ê°’ì€ Index: " + midIndex + "ì— ìˆë‹¤.");
 				
 	}
 
