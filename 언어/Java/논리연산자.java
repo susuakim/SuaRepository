@@ -1,6 +1,6 @@
-package ±âÅ¸¿¬»êÀÚ;
+package Â±Ã¢Ã…Â¸Â¿Â¬Â»ÃªÃ€Ãš;
 
-public class ex06_³í¸®¿¬»êÀÚ {
+public class ex06_Â³Ã­Â¸Â®Â¿Â¬Â»ÃªÃ€Ãš {
 
 	public static void main(String[] args) {
 //		not !
