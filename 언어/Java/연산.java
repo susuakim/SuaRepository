@@ -1,6 +1,6 @@
-package ¸Ş¼Òµå;
+package ë©”ì†Œë“œ;
 
-public class ex01_½Ç½À {
+public class ex01_ì‹¤ìŠµ {
 
 	public static void main(String[] args) {
 		add(3,5);
@@ -9,10 +9,10 @@ public class ex01_½Ç½À {
 		div(3,5);
 		
 		System.out.println("==============");
-		System.out.println("µ¡¼ÀÀº: " + add);
-		System.out.println("»¬¼ÀÀº: " + sub);
-		System.out.println("°ö¼ÀÀº: " + mul);
-		System.out.println("³ª´°¼ÀÀº: " + div);
+		System.out.println("ë§ì…ˆì€: " + add);
+		System.out.println("ëº„ì…ˆì€: " + sub);
+		System.out.println("ê³±ì…ˆì€: " + mul);
+		System.out.println("ë‚˜ëˆ—ì…ˆì€: " + div);
 	}
 
 	
