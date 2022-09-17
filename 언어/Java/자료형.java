@@ -1,13 +1,13 @@
-package ÀÚ·áÇü;
+package ìë£Œí˜•;
 
-public class ex03_ÀÚ·áÇü {
+public class ex03_ìë£Œí˜• {
 
 	public static void main(String[] args) {
-		// ÀÚ·áÇü º¯¼ö¸í = °ª;
-		// ³í¸®Çü true, false = boolean
+		// ìë£Œí˜• ë³€ìˆ˜ëª… = ê°’;
+		// ë…¼ë¦¬í˜• true, false = boolean
 		// 
-		boolean strbool = true; //Âü
-		boolean strbool2 = false; //°ÅÁş
+		boolean strbool = true; //ì°¸
+		boolean strbool2 = false; //ê±°ì§“
 		
 		System.out.println(strbool);
 		System.out.println(strbool2);
@@ -18,7 +18,7 @@ public class ex03_ÀÚ·áÇü {
 		System.out.println(strChar1);
 		System.out.println(intChar1);
 		
-		String name = "±è¼ö¾Æ";
+		String name = "ê¹€ìˆ˜ì•„";
 		
 		
 	}
