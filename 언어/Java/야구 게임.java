@@ -1,9 +1,9 @@
-package ¹İº¹¹®;
+package ë°˜ë³µë¬¸;
 
 import java.util.Random;
 import java.util.Scanner;
 
-public class ex01_¾ß±¸°ÔÀÓ {
+public class ex01_ì•¼êµ¬ê²Œì„ {
 
 	public static void main(String[] args) {
 		
@@ -37,8 +37,8 @@ public class ex01_¾ß±¸°ÔÀÓ {
 		while(true) {
 			
 			
-//			1¹øÂ° Á¤¼ö--------------------------------------------------------------
-			System.out.print("1¹øÂ° Á¤¼ö ÀÔ·Â: ");
+//			1ë²ˆì§¸ ì •ìˆ˜--------------------------------------------------------------
+			System.out.print("1ë²ˆì§¸ ì •ìˆ˜ ì…ë ¥: ");
 			
 			int num_in1 = sc.nextInt();
 			
@@ -50,8 +50,8 @@ public class ex01_¾ß±¸°ÔÀÓ {
 				cnt_b++;
 			}else {System.out.println("out"); cnt_o++;}
 			
-//			2¹øÂ° Á¤¼ö--------------------------------------------------------------
-			System.out.print("2¹øÂ° Á¤¼ö ÀÔ·Â: ");
+//			2ë²ˆì§¸ ì •ìˆ˜--------------------------------------------------------------
+			System.out.print("2ë²ˆì§¸ ì •ìˆ˜ ì…ë ¥: ");
 			
 			int num_in2 = sc.nextInt();
 			
@@ -63,8 +63,8 @@ public class ex01_¾ß±¸°ÔÀÓ {
 				cnt_b++;
 			}else {System.out.println("out"); cnt_o++;}
 			
-//			3¹øÂ° Á¤¼ö--------------------------------------------------------------
-			System.out.print("3¹øÂ° Á¤¼ö ÀÔ·Â: ");
+//			3ë²ˆì§¸ ì •ìˆ˜--------------------------------------------------------------
+			System.out.print("3ë²ˆì§¸ ì •ìˆ˜ ì…ë ¥: ");
 			
 			int num_in3 = sc.nextInt();
 			
@@ -77,10 +77,10 @@ public class ex01_¾ß±¸°ÔÀÓ {
 			}else {System.out.println("out"); cnt_o++;}
 			
 			
-			System.out.print(cnt_s + "½ºÆ®¶óÀÌÅ© "+ cnt_b + "º¼ " + cnt_o + "¾Æ¿ô");
+			System.out.print(cnt_s + "ìŠ¤íŠ¸ë¼ì´í¬ "+ cnt_b + "ë³¼ " + cnt_o + "ì•„ì›ƒ");
 			
 			if(cnt_s == 3) {
-				System.out.println("È¨·±");
+				System.out.println("í™ˆëŸ°");
 				break;
 		}else {
 			
