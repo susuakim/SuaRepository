@@ -1,6 +1,6 @@
-package ±âÅ¸¿¬»êÀÚ;
+package Â±Ã¢Ã…Â¸Â¿Â¬Â»ÃªÃ€Ãš;
 
-public class ex04_Áõ°¨¿¬»êÀÚ {
+public class ex04_ÃÃµÂ°Â¨Â¿Â¬Â»ÃªÃ€Ãš {
 
 	public static void main(String[] args) {
 		int a =5;
