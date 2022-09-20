@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<!-- 
+	idx : 1,
+	title : 스프링 게시판,
+	writer : 이름,
+	content : SpringBoot 게시판,
+	indate : 22/09/05,
+	count : 0
+	 -->
+	
+	<table border="1">
+		<tr>
+			<td th:text="${board.idx}">idx</td>
+		</tr>
+		<tr>
+			<td th:text="${board.title}">title</td>
+		</tr>
+		<tr>
+			<!-- 우리가 원하는 곳에 값을 집어넣을 때는 => [[ ... ]] -->
+			<td>writer : [[${board.writer}]]</td>
+		</tr>
+		<tr>
+			<td th:text="${board.content}">content</td>
+		</tr>
+		<tr>
+			<td th:text="${board.indate}">indate</td>
+		</tr>
+		<tr>
+			<td th:text="${board.count}">count</td>
+		</tr>
+	</table>
+
+</body>
+</html>

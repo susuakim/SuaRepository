@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<h1>게시글 목록</h1>
+
+	<!-- 
+	JSTL + EL(JSP)
+	<c:forEach var="board" items="${list}">
+		<tr>
+			<td>${board.title}</td>
+		</tr>
+	</c:forEach> 
+	>> 거의 모든 로직을 jsp 내부에서 구현 가능
+	>> 비지니스로직을 jsp에서 최대한 안 쓰려고 노력
+	>> jsp > (JSTL과 EL 동작) > Servlet > class > HTML > HTML파싱될 때 실행
+	>> taglib 지시자를 이용해서 선언
+	>> 태그 중심으로 사용
+	
+	thymeleaf(HTML) : html에서 서버내 데이터를 출력, 조작
+	>> 대체로 출력에 관한 로직만 구현가능
+	>> html 파싱될 때 실행
+	>> 속성값을 사용하여 적용
+	-->
+	
+	<table border="1">
+		<tr>
+			<td>글번호</td>
+			<td>제목</td>
+			<td>작성자</td>
+			<td>작성일</td>
+			<td>조회수</td>
+		</tr>
+		<!-- th:each="변수명 : 배열" -->
+		<tr th:each="board : ${list}">
+			<td th:text="${board.idx}">글번호</td>
+			<td><a th:text="${board.title}" href="boardContent.do">제목</a></td>
+			<td th:text="${board.writer}">작성자</td>
+			<td th:text="${board.indate}">작성일</td>
+			<td th:text="${board.count}">조회수</td>
+		</tr>
+	</table>
+
+</body>
+</html>
