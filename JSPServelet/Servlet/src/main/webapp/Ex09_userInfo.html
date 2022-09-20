@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+        /* table태그의 가로 폭*/
+        table{
+          width: 400px;
+        }
+        /*th들에게 줄 스타일*/
+        .forTh{
+            background-color: gray;
+            height: 50px;
+        }
+        /*tr들에게 줄 스타일*/
+        .forTr{
+            background-color: whitesmoke;
+            height: 35px;
+        }
+        /*td들에게 줄 스타일*/
+        .forTd{
+            text-align: right;
+        }
+        /*마지막 제출,초기화에게 줄 스타일*/
+        #special_tr{
+            text-align: center;
+        }
+    </style>
+  </head>
+  <body>
+    <form action="Ex09_usesrInfo" method="post">
+      <table >
+        <tr class="forTh">
+          <th colspan="2">step1: 아이디/비번 입력</th>
+        </tr>
+        <tr class="forTr">
+          <td class="forTd" >아이디</td>
+          <td><input type="text" name = "id" /></td>
+        </tr>
+        <tr class="forTr">
+          <td class="forTd">비밀번호</td>
+          <td><input type="text" name = "pw" /></td>
+        </tr>
+        <tr class="forTr">
+          <td class="forTd">비밀번호 확인</td>
+          <td><input type="text" name = "rpw" /></td>
+        </tr>
+        <tr class="forTh">
+          <th colspan="2">step2: 개인정보</th>
+        </tr>
+        <tr class="forTr">
+          <td class="forTd">성별</td>
+          <td>남<input type="radio" name="gender" value="남"/>
+          여<input type="radio" name="gender" value="여"/></td>
+        </tr>
+        <tr class="forTr">
+          <td class="forTd">혈액형</td>
+          <td>
+            <select name="blood">
+              <option value="A">A형</option>
+              <option value="B">B형</option>
+              <option value="C">C형</option>
+            </select>
+          </td>
+        </tr>
+        <tr class="forTr">
+          <td class="forTd">생일</td>
+          <td><input type="date" name="birth"/></td>
+        </tr>
+        <tr class="forTh">
+          <th colspan="2">step3: 선호도</th>
+        </tr>
+        <tr class="forTr">
+          <td class="forTd">취미</td>
+          <td>
+            축구<input type="checkbox" name="sport" value ="축구"/>
+            야구<input type="checkbox" name="sport" value ="야구"/>
+            농구<input type="checkbox" name="sport" value ="농구"/>
+          </td>
+        </tr>
+        <tr class="forTr">
+          <td class="forTd">좋아하는 색깔</td>
+          <td><input type="color" name="color" /></td>
+        </tr>
+        
+        <tr class="forTh">
+          <th colspan="2">step4: 적고 싶은 말</th>
+        </tr>
+        <tr>
+          <td colspan="2"><textarea cols="60" rows="5" name="talk"></textarea></td>
+        </tr>
+        <tr id="special_tr" class="forTr">
+          <td colspan="2"><input type="submit" /><input type="reset" /></td>
+        </tr>
+      </table>
+    </form>
+
+</body>
+</html>
